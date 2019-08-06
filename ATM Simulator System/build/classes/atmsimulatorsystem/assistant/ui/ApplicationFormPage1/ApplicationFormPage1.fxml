@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="560.0" prefWidth="500.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="atmsimulatorsystem.assistant.ui.ApplicationFormPage1.ApplicationFormPage1Controller">
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="500.0">
+      <children>
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="501.0" prefWidth="500.0" />
+        <Label alignment="CENTER" layoutX="70.0" layoutY="14.0" text="APPLICATION FORM">
+          <font>
+            <Font name="Arial Bold" size="36.0" />
+          </font>
+        </Label>
+        <Label layoutX="157.0" layoutY="56.0" text="Page 1: Personal Details">
+          <font>
+            <Font name="Arial Bold" size="16.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <HBox layoutX="0.0" layoutY="487.0" prefHeight="73.0" prefWidth="500.0">
+      <children>
+        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="38.0" prefWidth="100.0" text="SAVE" textAlignment="LEFT">
+          <HBox.margin>
+            <Insets left="110.0" right="30.0" top="10.0" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="btnBack" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="38.0" prefWidth="100.0" text="BACK" textAlignment="LEFT">
+          <HBox.margin>
+            <Insets left="50.0" right="30.0" top="10.0" />
+          </HBox.margin>
+        </Button>
+      </children>
+    </HBox>
+    <AnchorPane layoutX="0.0" layoutY="74.0" minHeight="412.0" prefHeight="412.0" prefWidth="500.0">
+      <children>
+        <TextField fx:id="txtFirstName" alignment="CENTER_LEFT" layoutX="92.0" layoutY="14.0" prefHeight="28.0" prefWidth="324.0" promptText="First Name" />
+        <TextField fx:id="txtFatherName" layoutX="92.0" layoutY="124.0" prefHeight="28.0" prefWidth="324.0" promptText="Father's Name" />
+        <Label layoutX="94.0" layoutY="162.0" text="Gender :">
+          <font>
+            <Font name="Arial" size="12.0" fx:id="x1" />
+          </font>
+        </Label>
+        <RadioButton id="radioGender" fx:id="radioGenderMale" layoutX="181.0" layoutY="160.0" mnemonicParsing="false" text="Male" />
+        <RadioButton id="radioGender" fx:id="radioGenderFemale" layoutX="264.0" layoutY="160.0" mnemonicParsing="false" text="Female" />
+        <Label font="$x1" layoutX="92.0" layoutY="225.0" text="Marital Status :" />
+        <TextField fx:id="txtAddress" layoutX="92.0" layoutY="253.0" prefHeight="28.0" prefWidth="324.0" promptText="Address" />
+        <TextField fx:id="txtCity" layoutX="92.0" layoutY="293.0" prefHeight="28.0" prefWidth="324.0" promptText="City" />
+        <TextField fx:id="txtPinCode" layoutX="92.0" layoutY="334.0" prefHeight="28.0" prefWidth="324.0" promptText="Pin Code" />
+        <TextField fx:id="txtState" layoutX="92.0" layoutY="374.0" prefHeight="28.0" prefWidth="324.0" promptText="State" />
+        <TextField fx:id="txtEmailAddress" layoutX="92.0" layoutY="185.0" prefHeight="28.0" prefWidth="324.0" promptText="Email Address" />
+        <TextField fx:id="txtLastName" alignment="CENTER_LEFT" layoutX="92.0" layoutY="87.0" prefHeight="28.0" prefWidth="324.0" promptText="Last Name" />
+        <TextField fx:id="txtMiddleName" alignment="CENTER_LEFT" layoutX="92.0" layoutY="51.0" prefHeight="28.0" prefWidth="324.0" promptText="Middle Name" />
+        <ComboBox fx:id="comboMarital" layoutX="204.0" layoutY="222.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+      <padding>
+        <Insets top="200.0" />
+      </padding>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@applicationformpage1.css" />
+  </stylesheets>
+</AnchorPane>
